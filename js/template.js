@@ -1,7 +1,7 @@
 
 function getHeader()
 {
-  fetch("/PLOrk/inline/header.html").then(function(result)
+  fetch("/inline/header.html").then(function(result)
   {
       result.text().then(function(html) {
         console.log(html)
@@ -13,7 +13,7 @@ function getHeader()
 
 function getFooter()
 {
-  fetch("/PLOrk/inline/footer.html").then(function(result)
+  fetch("/inline/footer.html").then(function(result)
   {
       result.text().then(function(html) {
         console.log(html)
