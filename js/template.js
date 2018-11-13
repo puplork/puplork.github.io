@@ -1,4 +1,17 @@
 
+function updateAddressDisplayed()
+{
+    if (history.pushState)
+    {
+      window.history.pushState("", "PLOrk", "plork.princeton.edu");
+    } 
+    else 
+    {
+      document.location.href = "plork.princeton.edu";
+    }
+}
+
+
 function getHeader()
 {
   fetch("/inline/header.html").then(function(result)
