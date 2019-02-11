@@ -19,6 +19,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
+
+    <!-- stylesheet linking for playlist -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/playlist.css">
+
+    <style type="text/css">
+    .vid-item {
+      width: 16.66%;
+      height: 16.66%;
+    }
+
+    .thumb {
+      height: 170px;
+    }
+    </style>
+
   </head>
   <body class="bg-black-5 black-70 pa4 sans-serif">
   
@@ -26,7 +42,94 @@
 
     <h1 class="">Human Modular</h1>
 
-    <iframe width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4mJdI_h5-rv0UBq-fl-GXwl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="vid-container">
+      <iframe id="vid_frame" width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4mJdI_h5-rv0UBq-fl-GXwl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="vid-list-container">
+      <div class ="vid-list">
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/HOhTJy9Q4U0?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/HOhTJy9Q4U0/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Cartridge Music - John Cage
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/Kq4hPsanqtk?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/Kq4hPsanqtk/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Ghostline - Jeff Snyder
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/Xjw19QcHDTM?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/Xjw19QcHDTM/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            ICEBlocks - Jeff Snyder
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/AeEXXcciXhE?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/AeEXXcciXhE/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Blågeten - Hans Dalfor
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/6BPJDWRf3d4?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/6BPJDWRf3d4/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Devil's Music and Credo in US 
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/-uLuvNfU2Ys?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/-uLuvNfU2Ys/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Human Modular - Chris Douthitt / PLOrk
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEFT AND RIGHT ARROWS -->
+    <!-- 
+    <div class="arrows">
+      <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+      <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+    </div>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+    </script>
+    -->
     
     <h2 class="">Taplin Auditorium 8pm April 18th, 2016</h2>
 
@@ -48,50 +151,74 @@
       <dd class="ml0">Harrison Waldon</dd>
     </dl>
 
-    <!-- TETHERED -->
     <dl class="lh-title pa4 mt0">
-      <dt class="f4 b">Tethered</dt>
-      <dd class="ml0">Alyssa Weinberg</dd><br>
+      <dt class="f5 b">Sō Percussion</dt>
+      <dd class="ml0">Eric Cha-Beach</dd>
+      <dd class="ml0">Josh Quillen</dd>
+      <dd class="ml0">Adam Sliwinski</dd>
+      <dd class="ml0">Jason Treuting</dd>
+    </dl>
 
-      <dd class="ml3 i">Tethered is an experiment in movement-specific sound creation, making use of tethers, motion sensors, and an interactive sculptural object which I have named the Jellyfish.</dd>
+    <!-- CARTRIDGE MUSIC -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">Cartridge Music (1960)</dt>
+      <dd class="ml0">John Cage</dd><br>
+
+      <dd class="ml3 i">One of the classics of early live electronic music, Cartridge Music asks the performers to amplify household objects with contact microphones (phonograph cartridges, originally). The score is created by the performers ahead of time; transparencies with intersecting line drawings are overlaid to calculate when sounds will occur.</dd>
 
     </dl>
 
-    <!-- DRONE AND DRUMS -->
+    <!-- GHOST LINE -->
     <dl class="lh-title pa4 mt0">
-      <dt class="f4 b">Drone and Drums</dt>
-      <dd class="ml0">Jason Treuting</dd><br>
-
-      <dd class="ml3 i">Drone and Drums Translated is the 4th iteration of a solo I made for a collaboration I did with the French choreographers in Projet in Situ several years ago that explores an expanding and contracting 3:2 polyrhythm.  It has had a life as a solo drum set piece, a song that So Percussion made with the guitarist/singer Grey Mcmurray, a quartet of flute/cello/guitar/drums made for a collaboration with Keila Perez-Vega and Duende for their 2017 Break my Echo show in Philadelphia and now, this electrified version for PLOrk.  The orchestration was a collaboration between myself, Mike, Matt and Rajeev and the choices of synth sounds and processed trombone are as important to this arrangement as the notes on the page. </dd>
-
-    </dl>
-
-    <!-- EVQ 1 -->
-    <dl class="lh-title pa4 mt0">
-      <dt class="f4 b">EVQ 1</dt>
-      <dd class="ml0">Alex Dowling</dd><br>
-
-      <dd class="ml3 i">This piece uses and misuses vocal effects such as autotune and harmonizers to create a type of ‘electronically-augmented’ choir.</dd>
-
-    </dl>
-
-    <!-- KEYLOGGER -->
-    <dl class="lh-title pa4 mt0">
-      <dt class="f4 b">Keylogger</dt>
-      <dd class="ml0">PLOrk</dd><br>
-
-      <dd class="ml3 i">What do a photocopier and keyboard have in common? Well, they are both sites of human intervention on otherwise mechanical devices. Keylogger, and the accompanying visual performance This is a Computer Science Department Independent Work project, are interested in working within the confines of their respective technologies and mediums, pushing them to the limits of what they can do, by using live coding and live photocopying.</dd><br>
-      <dd class="ml3 i">Keylogger is simultaneously performed and written – it does not exist before the performance and will only exist after as a recording (if recorded). Its success as a live coding/photocopying piece depends on the fact that each performance is entirely improvisational, reacting in the moment, and human in nature.</dd><br>
-      <dd class="ml3 i">Special thanks to Charlie Roberts, who created the programming language Gibberwocky, which we are using in this piece.</dd>
-
-    </dl>
-
-    <!-- OPPOSITE EARTH -->
-    <dl class="lh-title pa4 mt0">
-      <dt class="f4 b">Opposite Earth</dt>
+      <dt class="f4 b">Ghost Line (2016)</dt>
       <dd class="ml0">Jeff Snyder</dd><br>
 
-      <dd class="ml3 i">This is an animated notation piece for an open instrumentation. It was written for PLOrk and is intended to be performed by any combination of acoustic and electronic instruments. The "conductor" changes the image components in real-time to guide the course of the piece. For instance, the conductor can add and remove rings (performers), planets (pitches), and ticks or open circles (percussive sounds) at will. The color of the lines that the elements cross conveys which of five pitch gamuts are used. Planet/moon collisions are sonically represented by robotically actuated percussion instruments. Thanks to Drew Wallace for much of the visual Javascript magic. Thanks to Steven Kemper for the percussion robots.</dd>
+      <dd class="ml3 i">This piece came out of two ideas. The first idea was to create a work where any motion a performer made, even minor motions like blinking an eye, would create a sonic result. The second idea was to try to do a very literal translation between image and sound – scanning through an array of image pixels and treating the brightness values as points to build an audio waveform. My experiments with putting these concepts into practice led down a very curvy path, but eventually to the piece you’ll hear tonight. </dd>
+
+    </dl>
+
+    <!-- ICE BLOCKS -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">Ice Blocks</dt>
+      <dd class="ml0">Jeff Snyder</dd><br>
+
+      <dd class="ml3 i">Ice Blocks was initially developed as part of a workshop teaching middle and high school musicians in NYC about creating graphic notation, scores that use symbolism outside of the Western notational conventions. A notation example that I made for the workshop proved inspiring to use in performance, and PLOrk played a piece based on it this past fall for a performance at Grounds for Sculpture in Hamilton, NJ.</dd>
+
+    </dl>
+
+    <!-- BLÅGETEN -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">Blågeten (after Hans Dalfors)</dt>
+      <dd class="ml0">arranged by PLOrk</dd><br>
+
+      <dd class="ml3 i">Noah Fishman, a longtime PLOrk member, took a trip to Sweden last summer to study the folk music there. He returned with a repertoire of great tunes, and PLOrk decided to work up an arrangement of one of them.</dd>
+
+    </dl>
+
+    <!-- DEVIL'S MUSIC -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">Devil's Music (1985)</dt>
+      <dd class="ml0">Nicolas Collins</dd><br>
+
+      <dd class="ml3 i">Nicolas Collins, an American musician who has been a pioneer in the use of hardware hacking for musical purposes, created Devil’s Music in 1985. He began performing with a rig that included an input from live radio, passed through several delay effects pedals. The result was a site-specific piece, which could take on the local color of the city or country in which it was performed through the serendipitous selections of sounds coming over the radio. We’ll be performing an updated version which instead uses our own iTunes collections as material for the system, making the piece more personal and performer-specific than site-specific.</dd>
+
+    </dl>
+
+    <!-- CREDO IN US -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">Credo in Us (1942)</dt>
+      <dd class="ml0">John Cage</dd><br>
+
+      <dd class="ml3 i">Before he made Cartridge Music, Cage experimented with very early electronic music by incorporating the sounds of live radio into an acoustic composition, Credo in Us. In this performance, Sō Percussion will join us for the acoustic parts, and PLOrk’s Devil’s Music performance will become the “radio” for the Cage.</dd>
+
+    </dl>
+
+    <!-- DEVIL'S MUSIC -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">Human Modular (2016)</dt>
+      <dd class="ml0">Chris Douthitt and PLOrk</dd><br>
+
+      <dd class="ml3 i">This piece grew out of the meeting at the beginning of the semester about what kinds of crazy ideas people had. Josh Becker brought up the idea of a Human Modular Synthesizer, where PLOrk members send signals to each other as though each member is a single “module” that can process the audio in a particular way. Through experimentation, we wound up with a system that has more in common with the old game of “telephone”, where a message gets passed down the line, corrupted and transformed along the way. Chris Douthitt created the arrangement to organize the various ideas of how this system might become a full performance piece. It’s really fun to play; it’s very satisfying to all be a link in this strange musical chain.</dd>
 
     </dl>
 

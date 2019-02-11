@@ -20,6 +20,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
 
+    <!-- stylesheet linking for playlist -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/playlist.css">
+
+    <style type="text/css">
+    .vid-item {
+      width: 14.28%;
+      height: 14.28%;
+    }
+
+    .thumb {
+      height: 150px;
+    }
+    </style>
+
 
   </head>
   <body class="bg-black-5 black-70 pa4 sans-serif">
@@ -29,7 +44,103 @@
     <h1 class="">MEDI3V@L DR3AMS</h1>
     <h2 class="i">Music of the 14th and 15th centuries  on authentic period electronic instruments</h2>
 
-    <iframe width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4mi1AmRECC5ss-TTVy2fj8z" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="vid-container">
+      <iframe id="vid_frame" width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4mi1AmRECC5ss-TTVy2fj8z" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="vid-list-container">
+      <div class ="vid-list">
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/4OgdW11-l_g?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/4OgdW11-l_g/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Questa Fancuill'Amor
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/op8AergWnLc?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/op8AergWnLc/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Pictagoras, Jabol, et Orpheus
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/dtt-sLbbC3U?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/dtt-sLbbC3U/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Triste plaisir et douloureuse joye 
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/rXHdX5t5KJA?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/rXHdX5t5KJA/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+           La Harpe de Melodie
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/6AjN8kxHsvE?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/6AjN8kxHsvE/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            If Ye Love Me
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/q4JxrxRwxz8?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/q4JxrxRwxz8/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Music for Two Performers
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/Q2VHUcQRAOI?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/Q2VHUcQRAOI/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Stella Splendens
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEFT AND RIGHT ARROWS -->
+    <!-- 
+    <div class="arrows">
+      <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+      <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+    </div>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+    </script>
+    -->
     
     <h2 class="">Taplin Auditorium 8pm April 22nd, 2015</h2>
 

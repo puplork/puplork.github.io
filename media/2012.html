@@ -13,12 +13,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      PLOrk - 2014
+      PLOrk - 2012
     </title>
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/tachyons.css">
+
+    <!-- stylesheet linking for playlist -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/playlist.css">
+
+    <style type="text/css">
+    .vid-item {
+      width: 14.28%;
+      height: 14.28%;
+    }
+
+    .thumb {
+      height: 150px;
+    }
+    </style>
+
   </head>
   <body class="bg-black-5 black-70 pa4 sans-serif">
   
@@ -26,7 +42,103 @@
 
     <h1 class="">PLOrk @=> Spring 2012 Concert</h1>
 
-    <iframe width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4nZu03HbngdlrPMQmgGwvKZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="vid-container">
+      <iframe id="vid_frame" width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4nZu03HbngdlrPMQmgGwvKZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="vid-list-container">
+      <div class ="vid-list">
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/k6dwnr5RDow?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/k6dwnr5RDow/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            From the Waters - Anne Hege
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/VuoJx_CiQ8A?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/VuoJx_CiQ8A/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            LOrX Aeterna - Perry Cook
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/UEteTNc4ZkY?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/UEteTNc4ZkY/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Walo - Lainie Fefferman
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/h-W3eFxfouU?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/h-W3eFxfouU/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Some Assembly Required - Jascha Narveson
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/08S4jXHm68w?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/08S4jXHm68w/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Undeciphered Writing - Jeff Snyder
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/yaxwKQBvMSg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/yaxwKQBvMSg/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Victorian Webs - Michael Early 
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/MO60wsF4xVI?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb">
+            <img src="http://img.youtube.com/vi/MO60wsF4xVI/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Four Squared for Ligeti - Dan Trueman
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEFT AND RIGHT ARROWS -->
+    <!-- 
+    <div class="arrows">
+      <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+      <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+    </div>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+    </script>
+    -->
 
 <font face="verdana" size="2">
 <br>
