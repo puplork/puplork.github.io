@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script src="/js/template.js"></script>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      PLOrk Sideband 
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/tachyons.css">
+
+    <!-- stylesheet linking for playlist -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/css/playlist.css">
+
+  </head>
+  <body class="bg-black-5 black-70 pa4 sans-serif">
+  
+    <header></header><script>getHeader()</script>
+
+    <h1 class="ml2 mt0 mb4 f-headline-l">Sideband @ CCRMA</h1>
+
+    <div class="vid-container">
+      <iframe id="vid_frame"  width="100%" height="700vw" src="https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4m2QvV59KiIzH4VO2ClYrMk&index=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="vid-list-container">
+      <div class ="vid-list">
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4m2QvV59KiIzH4VO2ClYrMk&index=0&autoplay=1'">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/azTnPvsJAzg/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Most Beautiful - Anne Hege
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4m2QvV59KiIzH4VO2ClYrMk&index=1&autoplay=1'">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/_fQv7tUZgy8/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Nostalgic Synchronic Etude #2: Undertow - Dan Trueman
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4m2QvV59KiIzH4VO2ClYrMk&index=2&autoplay=1'">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/aIzmYurq9rg/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Artiforg - Daniel Iglesia
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4m2QvV59KiIzH4VO2ClYrMk&index=3&autoplay=1'">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/rGCS8VJvGfw/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            Ghost Line - Jeff Snyder
+          </div>
+        </div>
+
+        <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/videoseries?list=PLSDFnXBp2a4m2QvV59KiIzH4VO2ClYrMk&index=4&autoplay=1'">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/ZBkP9XaXNEY/0.jpg" alt="" />
+          </div>
+          <div class="desc">
+            In Line - Jascha Narveson
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- LEFT AND RIGHT ARROWS -->
+    <!-- 
+    <div class="arrows">
+      <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+      <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+    </div>
+    
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    });
+    </script>
+    -->
+
+    <!-- SIDEBAND -->
+    <dl class="lh-title pa4 mt0">
+      <dt class="f4 b">About Sideband</dt>
+      <dd class="ml3">PLOrk Sideband is an ever-evolving professional offshoot of the Princeton Laptop Orchestra, comprised of composers and performers who have come in contact with PLOrk in their academic and professional musical lives but are no longer students at Princeton. Many great works have come out of the group thus far.</dd>
+
+    </dl>
+
+    <footer></footer><script>getFooter()</script>
+    
+  </body>
+</html>
