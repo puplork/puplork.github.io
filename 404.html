@@ -1,12 +1,34 @@
-<?php
-$request_uri = 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://plork.deptcpanel.princeton.edu'.$_SERVER['REQUEST_URI'];
-echo "'http'.(empty($_SERVER['HTTPS'])?'':'s').'://plork.deptcpanel.princeton.edu'.$_SERVER['REQUEST_URI']";
-include $request_uri;
-?>
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL /asdfqwer was not found on this server.</p>
-<hr>
-</body></html>
+<script>
+  /**
+ * Get HTML asynchronously
+ * @param  {String}   url      The URL to get HTML from
+ * @param  {Function} callback A callback funtion. Pass in "response" variable to use returned HTML.
+ */
+  var getHTML = function ( url, callback ) {
+
+    // Feature detection
+    if ( !window.XMLHttpRequest ) return;
+
+    // Create new request
+    var xhr = new XMLHttpRequest();
+
+    // Setup callback
+    xhr.onload = function() {
+      if ( callback && typeof( callback ) === 'function' ) {
+        callback( this.responseXML );
+      }
+    }
+
+    // Get the HTML
+    xhr.open( 'GET', url );
+    xhr.responseType = 'document';
+    xhr.send();
+
+  };
+  let splitUrl = window.location.href.split('/', 4);
+  let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + 'splitUrl[3];
+  
+  getHTML( newUrl, function (response) {
+    document.documentElement.innerHTML = response.documentElement.innerHTML;
+  });
+</script>
