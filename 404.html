@@ -15,7 +15,28 @@
     // Setup callback
     xhr.onload = function() {
       if ( callback && typeof( callback ) === 'function' ) {
-        callback( this.responseXML );
+        callback( this.response );
+      }
+    }
+
+    // Get the HTML
+    xhr.open( 'GET', url );
+    xhr.responseType = 'document';
+    xhr.send();
+
+  };
+  var getBlob = function ( url, callback ) {
+
+    // Feature detection
+    if ( !window.XMLHttpRequest ) return;
+
+    // Create new request
+    var xhr = new XMLHttpRequest();
+
+    // Setup callback
+    xhr.onload = function() {
+      if ( callback && typeof( callback ) === 'function' ) {
+        callback( this.response );
       }
     }
 
@@ -35,7 +56,7 @@
   // Replace this page's content
   let newUrl = proxyUrl + splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
   
-  getHTML( newUrl, function (response) {
+  getBlob( newUrl, function (response) {
     document.documentElement.innerHTML = response.documentElement.innerHTML;
   });
 </script>
