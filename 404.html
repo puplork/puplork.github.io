@@ -27,9 +27,23 @@
   };
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   let splitUrl = window.location.href.split('/', 4);
-  let newUrl = proxyUrl + splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
+
+  // Redirect
+  let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
+  window.location.replace("http://www.w3schools.com");
+
+  // Replace this page's content
+  // let newUrl = proxyUrl + splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
   
-  getHTML( newUrl, function (response) {
-    document.documentElement.innerHTML = response.documentElement.innerHTML;
-  });
+  // getHTML( newUrl, function (response) {
+  //   document.documentElement.innerHTML = response.documentElement.innerHTML;
+  // });
 </script>
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /adsfwqerasdf was not found on this server.</p>
+<hr>
+<address>Apache/2.4.6 () Server at www.princeton.edu Port 443</address>
+</body></html>
