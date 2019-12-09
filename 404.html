@@ -1,5 +1,13 @@
+<html><head>
 <?php
 $request_uri = 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://plork.deptcpanel.princeton.edu'.$_SERVER['REQUEST_URI'];
-echo "<script>console.log(".json_encode($request_uri).")</script>";
+echo $request_uri;
 include $request_uri;
 ?>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /asdfqwer was not found on this server.</p>
+</body></html>
+
+	
