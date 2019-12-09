@@ -15,7 +15,7 @@
     // Setup callback
     xhr.onload = function() {
       if ( callback && typeof( callback ) === 'function' ) {
-        callback( this.response );
+        callback( this.responseXML );
       }
     }
 
@@ -25,40 +25,19 @@
     xhr.send();
 
   };
-  var getBlob = function ( url, callback ) {
-
-    // Feature detection
-    if ( !window.XMLHttpRequest ) return;
-
-    // Create new request
-    var xhr = new XMLHttpRequest();
-
-    // Setup callback
-    xhr.onload = function() {
-      if ( callback && typeof( callback ) === 'function' ) {
-        callback( this.response );
-      }
-    }
-
-    // Get the HTML
-    xhr.open( 'GET', url );
-    xhr.responseType = 'blob';
-    xhr.send();
-
-  };
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   let splitUrl = window.location.href.split('/', 4);
 
-  // // Redirect
-  // let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
-  // window.location.replace(newUrl);
+  // Redirect
+  let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
+  window.location.replace(newUrl);
 
   // Replace this page's content
-  let newUrl = proxyUrl + splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
+  // let newUrl = proxyUrl + splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
   
-  getBlob( newUrl, function (response) {
-    document.documentElement.innerHTML = response.documentElement.innerHTML;
-  });
+  // getHTML( newUrl, function (response) {
+  //   document.documentElement.innerHTML = response.documentElement.innerHTML;
+  // });
 </script>
 <html><head>
 <title>404 Not Found</title>
