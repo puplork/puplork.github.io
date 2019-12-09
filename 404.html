@@ -26,7 +26,7 @@
 
   };
   let splitUrl = window.location.href.split('/', 4);
-  let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + 'splitUrl[3];
+  let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
   
   getHTML( newUrl, function (response) {
     document.documentElement.innerHTML = response.documentElement.innerHTML;
