@@ -27,9 +27,9 @@
   };
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   let splitUrl = window.location.href.split('/', 4);
-  let newUrl = splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
+  let newUrl = proxyUrl + splitUrl[0] + '//plork.deptcpanel.princeton.edu/' + splitUrl[3];
   
-  getHTML( proxyUrl + newUrl, function (response) {
+  getHTML( newUrl, function (response) {
     document.documentElement.innerHTML = response.documentElement.innerHTML;
   });
 </script>
