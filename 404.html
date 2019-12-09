@@ -1,4 +1,5 @@
 <?php
-error.log('http'.(empty($_SERVER['HTTPS'])?'':'s').'://plork.deptcpanel.princeton.edu'.$_SERVER['REQUEST_URI'])
-include 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://plork.deptcpanel.princeton.edu'.$_SERVER['REQUEST_URI']
+$request_uri = 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://plork.deptcpanel.princeton.edu'.$_SERVER['REQUEST_URI'];
+echo "<script>console.log(".json_encode($request_uri).")</script>";
+include $request_uri;
 ?>
