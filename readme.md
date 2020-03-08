@@ -1,6 +1,9 @@
 PLOrk is the Princeton Laptop Orchestra.
 
-Jeff Snyder, Director
-Matt Wang, Assistant Director
-Jason Treuting, Associate Director
+Jeff Snyder, Director<br>
+
+Matt Wang, Assistant Director<br>
+
+Jason Treuting, Associate Director<br>
+
 
