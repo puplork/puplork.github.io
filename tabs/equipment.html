@@ -8,6 +8,12 @@
       crossorigin="anonymous">
     </script>
     <script src="/js/template.js"></script>
+    <script>
+      $(function() {
+        getHeader();
+        getFooter();
+      });
+    </script>
 
     
     <meta charset="utf-8">
@@ -22,7 +28,7 @@
   </head>
   <body class="bg-black-5 black-70 pa4 sans-serif">
   
-    <header></header>
+  <div id="site-header"></div>
 
     <h1 class="ml2 mb4 mt0 f3 f1-m f-headline-l">Equipment</h1>
 <br>
@@ -42,7 +48,7 @@ Throughout the years, PLOrk has accumulated equipment from past performances. We
 
 
     <!-- SVG Icons are from https://simpleicons.org -->
-<footer></footer>
+  <div id="site-footer"></div>
     
   </body>
 </html>

@@ -8,6 +8,12 @@
       crossorigin="anonymous">
     </script>
     <script src="/js/template.js"></script>
+    <script>
+      $(function() {
+        getHeader();
+        getFooter();
+      });
+    </script>
 
     
     <meta charset="utf-8">
@@ -27,21 +33,7 @@
   </head>
   <body class="bg-black-5 black-70 pa4 sans-serif">
   
-    <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
-
-      <!-- <h1 class="white f-plork-l">The Princeton Laptop Orchestra</h1> -->
-    
-      <nav class="f8 fw5 ttu tracked">
-        <a class="link dim white dib mr3" href="/" title="PLOrk">PLOrk</a>
-        <a class="link dim white dib mr3" href="/tabs/events.html" title="Events">Events</a>
-        <a class="link dim white dib mr3" href="/tabs/people.html" title="People">People</a>
-        <a class="link dim white dib mr3" href="/tabs/about.html" title="About">About</a>
-        <a class="link dim white dib mr3" href="/tabs/papers.html" title="Papers">Papers</a>
-        <a class="link dim white dib mr3" href="/tabs/archives.html" title="Archives">Archives</a>
-        <a class="link dim white dib" href="/tabs/contact.html" title="Contact">Contact</a>
-      </nav>
-    
-    </header>
+  <div id="site-header"></div>
 
     <h1 class="ml2 mt0 mb4 f-headline-l">PLOrk : 2017 : 10th Anniversary Show</h1>
     <div class="vid-list-container">

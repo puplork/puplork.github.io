@@ -14,23 +14,33 @@ function updateAddressDisplayed()
 
 function getHeader()
 {
-  fetch("/inline/header.html").then(function(result)
-  {
-      result.text().then(function(html) {
-        console.log(html)
-        $("header").html(html);
-      })
-  });
+  fetch("/inline/header.html")
+    .then(function(result) {
+      return result.text();
+    })
+    .then(function(html) {
+      $("#site-header").html(html);
+    });
 }
 
 
 function getFooter()
 {
-  fetch("/inline/footer.html").then(function(result)
-  {
-      result.text().then(function(html) {
-        console.log(html)
-        $("footer").html(html);
-      })
-  });
+  fetch("/inline/footer.html")
+    .then(function(response) {
+      console.log("Response status:", response.status);
+      return response.text();
+    })
+    .then(function(html) {
+      console.log("FULL FOOTER:");
+      console.log(html);
+      console.log("HTML LENGTH:", html.length);
+
+      document.getElementById("site-footer").innerHTML = html;
+    })
+    .catch(function(error) {
+      console.error("FOOTER ERROR:", error);
+    });
 }
+
+
