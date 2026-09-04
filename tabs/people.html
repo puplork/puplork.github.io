@@ -10,27 +10,40 @@
     <script src="/js/template.js"></script>
 
     <style>
-      a 
-      {
-        color:inherit;
-        text-decoration: none;  
+      .people {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
       }
-      article:hover
-      {
-        background-color: #F7E4FE;
-      }
-      article
-      {
-        vertical-align: middle;
-      }
-      /*
-      body
-      {
-        background-image:url("/img/plork.jpg");
-      }
-      */
-    </style>
 
+      .person {
+        width: 280px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        overflow: hidden;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .person img {
+        width: 100%;
+        height: 280px;
+        object-fit: contain;
+        display: block;
+      }
+
+      .person h2 {
+        font-size: 24px;
+        margin: 18px 10px 6px;
+      }
+
+      .person p {
+        font-size: 18px;
+        margin: 0 10px 20px;
+        color: #666;
+      }
+    </style>
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -45,8 +58,6 @@
   <body class="bg-black-5 black-70 pa4 sans-serif" >
     
     <header class="bg-black-90 w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
-
-      <!-- <h1 class="white f-plork-l">The Princeton Laptop Orchestra</h1> -->
     
       <nav class="f8 fw5 ttu tracked">
         <a class="link dim white dib mr3" href="/" title="PLOrk">PLOrk</a>
@@ -62,55 +73,33 @@
 
     <h1 class="ml2 mt0 f3 f1-m f-headline-l">People</h1>
 
-    <main class="pl5 mw6 left center-y">
+    <div class="people">
 
-      <a href="http://www.scattershot.org/news.htm">
-        <article class="dt w-100 bb b--black-05 pb2 mt2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="/img/jeff.jpg" class="ba b--black-10 db br2 w2 w3-ns h2 h3-ns"/>
-          </div>
-          <div class="dtc v-mid pl3">
-            <h1 class="f6 f5-ns fw6 lh-title black mv0">Jeff Snyder </h1>
-            <h2 class="f6 fw4 mt0 mb0 black-60">Director</h2>
-          </div>
-        </article>
+      <a class="person" href="http://www.scattershot.org/">
+        <img src="/img/jeff.jpg" alt="Jeff Snyder">
+        <h2>Jeff Snyder</h2>
+        <p>Director</p>
       </a>
 
-      <a href="">
-        <article class="dt w-100 bb b--black-05 pb2 mt2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="/img/myra.jpg" class="ba b--black-10 db br2 w2 w3-ns h2 h3-ns"/>
-          </div>
-          <div class="dtc v-mid pl3">
-            <h1 class="f6 f5-ns fw6 lh-title black mv0">Myra Norton </h1>
-            <h2 class="f6 fw4 mt0 mb0 black-60">Assistant Director</h2>
-          </div>
-        </article>
+      <a class="person" href="">
+        <img src="/img/myra.jpg" alt="Myra Norton">
+        <h2>Myra Norton</h2>
+        <p>Assistant Director</p>
       </a>
 
-      <a href="http://manyarrowsmusic.com/">
-        <article class="dt w-100 bb b--black-05 pb2 mt2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="/img/dan.jpg" class="ba b--black-10 db br2 w2 w3-ns h2 h3-ns"/>
-          </div>
-          <div class="dtc v-mid pl3">
-            <h1 class="f6 f5-ns fw6 lh-title black mv0">Dan Trueman</h1>
-            <h2 class="f6 fw4 mt0 mb0 black-60">Co-Founder</h2>
-          </div>
-        </article>
+      <a class="person" href="http://manyarrowsmusic.com/">
+        <img src="/img/dan.jpg" alt="Dan Trueman">
+        <h2>Dan Trueman</h2>
+        <p>Co-Founder</p>
       </a>
 
-      <a href="https://www.cs.princeton.edu/~prc/">
-        <article class="dt w-100 bb b--black-05 pb2 mt2" href="#0">
-          <div class="dtc w2 w3-ns v-mid">
-            <img src="/img/perry.jpg" class="ba b--black-10 db br2 w2 w3-ns h2 h3-ns"/>
-          </div>
-          <div class="dtc v-mid pl3">
-            <h1 class="f6 f5-ns fw6 lh-title black mv0">Perry Cook</h1>
-            <h2 class="f6 fw4 mt0 mb0 black-60">Co-Founder</h2>
-          </div>
-        </article>
+      <a class="person" href="https://www.cs.princeton.edu/~prc/">
+        <img src="/img/perry.jpg" alt="Perry Cook">
+        <h2>Perry Cook</h2>
+        <p>Co-Founder</p>
       </a>
+
+    </div>
 
       
     </main>
