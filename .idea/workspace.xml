@@ -20,42 +20,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd8857f6-c282-4d07-9215-b8044b917991" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inline/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/inline/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2012.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2012.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2014.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2014.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2015.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2015.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2016.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2016.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2017.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2017.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2018.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2018.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2019.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2019.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2020.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2020.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2022.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2022.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2023.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2023.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2023_Thermal.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2023_Thermal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2024_soundsystem.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2024_soundsystem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2025.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2025.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2026_festival.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2026_festival.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/2026_homecoming.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/2026_homecoming.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/emplork2022.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/emplork2022.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/fanfare.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/fanfare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/foursquared.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/foursquared.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/ge.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/ge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/glypticchannels.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/glypticchannels.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/houseofsound-2014.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/houseofsound-2014.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/houseofsound-2016.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/houseofsound-2016.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/longstring.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/longstring.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/mus313-2018.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/mus313-2018.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/sideband.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/sideband.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/sidebandccrma.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/sidebandccrma.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/equipment.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/equipment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/papers.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/papers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/people.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/people.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/resources.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
